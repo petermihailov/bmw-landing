@@ -1,5 +1,5 @@
 .slide-store {
-  background: linear-gradient($main-color 10%, rgba(3, 42, 132, 0) 80%), linear-gradient(rgba(3, 42, 132, 0) 40%, $main-color), url('assets/backgrounds/store-bg.jpg') center no-repeat;
+  background: linear-gradient(rgba(3, 42, 132, 0.4), rgba(3, 42, 132, 0.4)), url('assets/backgrounds/store-bg.jpg') center no-repeat;
   background-size: cover;
   padding-bottom: 58em;
   overflow: hidden;
@@ -16,15 +16,15 @@
     position: absolute;
     right: -9999px;
     left: -9999px;
+    z-index: 1;
     margin: auto;
     width: 54.5em;
-    height: 50em;
-    will-change: transform;
   }
 
   .block {
     position: absolute;
     opacity: 0;
+    will-change: transform;
 
     img {
       display: block;

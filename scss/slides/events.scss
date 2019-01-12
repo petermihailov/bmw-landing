@@ -1,6 +1,5 @@
-/* slide slide */
 .slide-events {
-  background: linear-gradient($main-color 10%, rgba(3, 42, 132, 0) 80%), linear-gradient(rgba(3, 42, 132, 0) 40%, $main-color), url('assets/backgrounds/events-bg.jpg') no-repeat;
+  background: linear-gradient(rgba(3, 42, 132, 0.6), rgba(3, 42, 132, 0.6)), url('assets/backgrounds/events-bg.jpg') center no-repeat;
   background-size: cover;
 
   .events {

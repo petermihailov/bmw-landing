@@ -1,10 +1,13 @@
 .slide-partners {
-  background: linear-gradient($main-color 10%, rgba(3, 42, 132, 0) 80%), linear-gradient(rgba(3, 42, 132, 0) 40%, $main-color), url('assets/backgrounds/partners-bg.jpg') center no-repeat;
+  background: url('assets/backgrounds/partners-bg.jpg') center no-repeat;
   background-size: cover;
   padding-right: 0;
   padding-left: 0;
+  min-height: 40em;
 
   .partners {
+    position: relative;
+    z-index: 1;
     margin: 5em 0;
     background-color: #fff;
     padding: 2em;

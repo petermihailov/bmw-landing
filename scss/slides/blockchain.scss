@@ -1,14 +1,13 @@
 .slide-blockchain {
-  background: linear-gradient($main-color 25%, rgba(3, 42, 132, 0) 60%), linear-gradient(rgba(3, 42, 132, 0) 70%, $main-color);
-  min-height: calc(100vh + 15em);
+  padding-bottom: 0;
 
   .bg {
-    position: absolute;
-    top: 15em;
-    left: 0;
-    z-index: -1;
-    width: 100vw;
-    height: 100vh;
-    object-fit: cover;
+    margin-left: -2em;
+    min-width: 100vw;
+
+    video {
+      min-width: 100vw;
+      object-fit: cover;
+    }
   }
 }
