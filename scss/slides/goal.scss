@@ -1,0 +1,26 @@
+.slide-goal {
+  display: flex;
+  align-items: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('assets/backgrounds/goal-bg.jpg') center top no-repeat;
+  background-size: cover;
+
+  .info {
+    margin-top: 1em;
+    font-size: 1.2rem;
+
+    p {
+      margin-bottom: 1em;
+    }
+
+    ul {
+      display: flex;
+      font-weight: bold;
+    }
+
+    li {
+      &:not(:last-child) {
+        margin-right: 2em;
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+.slide-values {
+  display: flex;
+  align-items: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('assets/backgrounds/values-bg.jpg') no-repeat;
+  background-size: cover;
+
+  .we {
+    margin: 1em 0 3em;
+    font-weight: bold;
+
+    li {
+      margin-bottom: .5em;
+    }
+  }
+
+  h3 {
+    margin-bottom: .8em;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+}

@@ -1,0 +1,24 @@
+<div class="gallery">
+    <div class="glider" data-index="{{ idx }}" itemscope itemtype="http://schema.org/ImageGallery">
+        {% for item in items %}
+            <figure class="item" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                <a href="assets/{{ path }}/{{ item.name }}" itemprop="contentUrl" data-size="{{ item.size }}">
+                    <img src="assets/{{ path }}/min/{{ item.name }}" itemprop="thumbnail" alt=""/>
+                </a>
+            </figure>
+        {% endfor %}
+    </div>
+    <button role="button" aria-label="Previous" class="glider-prev">
+        <svg class="prev" xmlns="http://www.w3.org/2000/svg" version="1.1" width="40"
+             height="40">
+            <path d="M23.5 11.5 L15.5 19.5 L23.5 27.5" stroke-linejoin="round" stroke-linecap="round"
+                  style="fill:none; stroke:#fff; stroke-width:3px"></path>
+        </svg>
+    </button>
+    <button role="button" aria-label="Next" class="glider-next">
+        <svg class="next" xmlns="http://www.w3.org/2000/svg" version="1.1" width="40" height="40">
+            <path d="M16.5 11.5 L24.5 19.5 L16.5 27.5" stroke-linejoin="round" stroke-linecap="round"
+                  style="fill:none; stroke:#fff; stroke-width:3px"></path>
+        </svg>
+    </button>
+</div>

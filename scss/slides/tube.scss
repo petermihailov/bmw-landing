@@ -1,0 +1,45 @@
+$height: 1700px;
+
+.slide-tube {
+  background: linear-gradient($main-color, rgba(3, 42, 132, 0) 40%), url('assets/backgrounds/tube-bg.jpg') center no-repeat;
+  background-size: cover;
+  min-height: $height;
+  max-height: $height;
+  overflow: hidden;
+
+  &::after {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    background: linear-gradient(rgba(3, 42, 132, 0), $main-color);
+    height: 25em;
+    content: '';
+    pointer-events: none
+  }
+
+  .content {
+    position: relative;
+    z-index: 2;
+    margin-bottom: 1em;
+  }
+
+  .val {
+    margin-top: .5em;
+    font-size: 1.2em;
+  }
+
+  .parallax {
+    display: flex;
+    position: absolute;
+    top: 700px;
+    right: -9999px;
+    left: -9999px;
+    justify-content: space-between;
+    margin: auto;
+    width: 1250px;
+    pointer-events: none;
+    will-change: transform3d;
+  }
+}

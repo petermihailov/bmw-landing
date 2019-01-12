@@ -1,0 +1,51 @@
+.slide-team {
+  background: linear-gradient($main-color 10%, rgba(3, 42, 132, 0) 80%), linear-gradient(rgba(3, 42, 132, 0) 40%, $main-color),url('assets/backgrounds/team-bg.jpg') no-repeat;
+  background-size: cover;
+  padding-bottom: 0;
+
+  .team {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3em;
+
+    figure {
+      position: relative;
+      margin: 2em 0;
+
+      &:nth-child(even) {
+        margin-left: auto;
+
+        .card {
+          right: 11.75rem;
+          left: auto;
+        }
+      }
+    }
+
+    img {
+      display: block;
+      width: 23.5em;
+      height: 24.5em;
+    }
+  }
+
+  .card {
+    position: absolute;
+    bottom: 2.5rem;
+    left: 11.75rem;
+    z-index: 1;
+    min-width: 20.75rem;
+
+    .description {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &.to-right {
+      .description {
+        flex-direction: row-reverse;
+      }
+    }
+  }
+}

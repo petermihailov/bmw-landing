@@ -1,0 +1,11 @@
+.slide-club {
+  background: linear-gradient(rgba(3, 42, 132, .6) 60%, $main-color), url('assets/backgrounds/club-bg.jpg') bottom no-repeat;
+  background-size: cover;
+
+  .club-icon {
+    position: absolute;
+    margin-left: 2rem;
+    width: 4rem;
+    height: 5rem;
+  }
+}

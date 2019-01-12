@@ -1,0 +1,22 @@
+/* slide slide */
+.slide-events {
+  background: linear-gradient($main-color 10%, rgba(3, 42, 132, 0) 80%), linear-gradient(rgba(3, 42, 132, 0) 40%, $main-color), url('assets/backgrounds/events-bg.jpg') no-repeat;
+  background-size: cover;
+
+  .events {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .event {
+    margin-top: 3em;
+
+    &:nth-child(even) {
+      margin-left: auto;
+    }
+  }
+
+  .card {
+    max-width: 27.5rem;
+  }
+}

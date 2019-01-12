@@ -1,0 +1,36 @@
+.slide-apps {
+  padding-top: 1em;
+  overflow: hidden;
+  pointer-events: none;
+
+  .val {
+    margin: 1em 0;
+    white-space: nowrap;
+  }
+
+  .apps {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .parallax {
+    will-change: transform3d;
+  }
+
+  .app {
+    border-radius: 50%;
+    width: 5em;
+    height: 5em;
+
+    &:not(:last-child) {
+      margin-right: 1em;
+    }
+  }
+
+  .discounts {
+    display: block;
+    opacity: .7;
+    max-width: 3093154.65rem;
+    height: 10rem;
+  }
+}

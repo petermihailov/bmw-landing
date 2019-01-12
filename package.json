@@ -1,0 +1,33 @@
+{
+  "name": "bemyways",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "gulp",
+    "build": "npm run build-sass && npm run build-autoprefix && npm run build-cleancss && gulp",
+    "build-sass": "npm run sass-fix && node-sass main.scss build/styles.css",
+    "build-cleancss": "cleancss -o build/styles.min.css build/styles.css",
+    "build-autoprefix": "postcss --use autoprefixer --map false --output build/styles.css build/styles.css",
+    "sass-fix": "sass-lint-auto-fix -c .sass-lint.yml"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.2.3",
+    "autoprefixer": "^9.4.4",
+    "browser-sync": "^2.26.3",
+    "clean-css-cli": "^4.2.1",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^8.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-copy": "^4.0.1",
+    "gulp-cssbeautify": "^1.0.1",
+    "gulp-data": "^1.3.1",
+    "gulp-plumber": "^1.2.0",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-twig": "^1.2.0",
+    "gulp-watch": "^5.0.1",
+    "node-sass": "^4.11.0",
+    "postcss-cli": "^6.1.1",
+    "rimraf": "^2.6.3",
+    "sass-lint-auto-fix": "^0.15.1"
+  }
+}

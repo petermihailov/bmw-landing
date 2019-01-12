@@ -1,0 +1,72 @@
+<section class="slide slide-events">
+    <div class="container">
+        <div class="content">
+            <h2>Events & Meetings</h2>
+            <p>We participate in the largest significant events in the travel and blockchain spheres around the World.
+                Soon the site will announce events in the USA, Europe and Asia, where we plan to present our
+                project.</p>
+
+            <div class="events">
+                <!-- event 1 -->
+                <div class="event">
+                    {% include '../includes/gallery.twig' with {
+                        idx: '1',
+                        path: 'events/e1',
+                        items: [{
+                            name: '1.jpg',
+                            size: '3264x2448',
+                        }, {
+                            name: '2.jpg',
+                            size: '3135x2351'
+                        }, {
+                            name: '3.jpg',
+                            size: '3264x2448'
+                        }, {
+                            name: '4.jpg',
+                            size: '2818x2287'
+                        }, {
+                            name: '5.jpg',
+                            size: '3264x2448'
+                        }]
+                    } %}
+                    <div class="card">
+                        <div class="title">Web Summit at Lisbon</div>
+                        <div class="description">This year over 70,000 people came to Lisbon for Web Summit: CEOs and
+                            founders of the world’s biggest companies, the most promising new startups, influential
+                            investors and leading journalists. We found a lot of new partners and opportunities to move
+                            forward faster.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- event 2 -->
+                <div class="event">
+                    {% include '../includes/gallery.twig' with {
+                        idx: '2',
+                        path: 'events/e2',
+                        items: [{
+                            name: '1.jpg',
+                            size: '3264x2448',
+                        }, {
+                            name: '2.jpg',
+                            size: '3264x2448'
+                        }, {
+                            name: '3.jpg',
+                            size: '4000x3000'
+                        }, {
+                            name: '4.jpg',
+                            size: '2818x2287'
+                        }]
+                    } %}
+                    <div class="card">
+                        <div class="title">Malta Blockchain Conference</div>
+                        <div class="description">Prime Minister of Malta announced a new era of crypto sphere regulation. We
+                            were glad to be there at this historic moment and discuss with representatives of the government
+                            and financial and legal companies the prospects of the crypto market.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

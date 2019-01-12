@@ -1,0 +1,73 @@
+.slide-store {
+  background: linear-gradient($main-color 10%, rgba(3, 42, 132, 0) 80%), linear-gradient(rgba(3, 42, 132, 0) 40%, $main-color), url('assets/backgrounds/store-bg.jpg') center no-repeat;
+  background-size: cover;
+  padding-bottom: 58em;
+  overflow: hidden;
+
+  .content {
+    margin-bottom: 3em;
+  }
+
+  .desc {
+    font-size: 0.9rem;
+  }
+
+  .blocks {
+    position: absolute;
+    right: -9999px;
+    left: -9999px;
+    margin: auto;
+    width: 54.5em;
+    height: 50em;
+    will-change: transform;
+  }
+
+  .block {
+    position: absolute;
+    opacity: 0;
+
+    img {
+      display: block;
+      width: 22.5em;
+      height: 22.5em;
+    }
+
+    .ticket {
+      position: absolute;
+      top: 17.5em;
+      left: 6.5em;
+      z-index: -1;
+      width: 4em;
+      height: 4em;
+    }
+  }
+
+  .fadeIn {
+    animation: fadeInUp 1s cubic-bezier(0.22, 0.61, 0.36, 1);
+    animation-delay: .3s;
+    animation-fill-mode: both;
+  }
+
+  .card {
+    position: absolute;
+    top: 4.5em;
+    width: 20.75rem;
+  }
+
+  .one .card, .three .card {
+    left: 15.75em;
+  }
+
+  .two {
+    top: 16em;
+    left: 32em;
+
+    .card {
+      left: -8.5em;
+    }
+  }
+
+  .three {
+    top: 32em;
+  }
+}
