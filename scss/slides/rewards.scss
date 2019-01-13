@@ -30,9 +30,10 @@
 
   .card-bg {
     display: block;
-    height: 12em;
-    user-select: none;
+    width: 100%;
+    height: 9em;
     object-fit: cover;
+    user-select: none;
   }
 
   .coin-icon {
