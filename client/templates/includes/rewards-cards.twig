@@ -1,0 +1,12 @@
+<div class="rewards">
+    {% for item in items %}
+        <div class="reward-card">
+            <img class="card-bg" src="{{ item.img }}" alt="">
+            <div class="card-header">
+                <h3>{{ item.title }}</h3>
+                <p>{{ item.description }}</p>
+            </div>
+            <img class="coin-icon" src="assets/coin.png" alt="">
+        </div>
+    {% endfor %}
+</div>
