@@ -1,5 +1,11 @@
 .gallery {
   position: relative;
+  transition: outline-color .2s;
+  outline: .3em solid transparent;
+
+  &:focus-within {
+    outline-color: #fff;
+  }
 
   .glider {
     width: 52rem;
