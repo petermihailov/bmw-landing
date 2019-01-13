@@ -1,4 +1,5 @@
 #slide-main {
+  padding-top: 10rem;
   min-height: 100vh;
 
   .bg {
@@ -17,5 +18,28 @@
 
   .content {
     max-width: 38rem;
+  }
+
+  .sound-button {
+    $size: 3rem;
+    position: absolute;
+    right: 2rem;
+    bottom: 2rem;
+    outline: none;
+    border: 0;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: $size;
+    cursor: pointer;
+    width: $size;
+    height: $size;
+
+    &.sound-on {
+      background-image: url("assets/sound-on.png");
+    }
+
+    &.sound-off {
+      background-image: url("assets/sound-off.png");
+    }
   }
 }

@@ -1,9 +1,15 @@
 .header {
   display: flex;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
   align-items: center;
   justify-content: space-between;
+  z-index: 10;
   margin: 1rem auto;
   padding: 0 1rem;
+  width: 100%;
   max-width: 60em;
   font-size: 1.2rem;
 
