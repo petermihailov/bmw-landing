@@ -36,7 +36,7 @@
 
   .gallery-card {
     position: absolute;
-    top: 40rem;
+    top: calc(40rem + 1px);
     left: 0;
     transform: translateY(-100%);
     z-index: 10;

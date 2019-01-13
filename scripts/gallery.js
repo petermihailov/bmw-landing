@@ -173,7 +173,7 @@
   /*
   * GliderJS
   * */
-  window.addEventListener('load', function () {
+  window.addEventListener('DOMContentLoaded', function () {
     const delay = 3000;
     const elements = document.querySelectorAll('.glider');
 
@@ -194,7 +194,10 @@
 
       startSlideShow();
 
-      window.addEventListener('click', (e) => {
+      const isTouchInteraction = 'ontouchstart' in window || navigator.msMaxTouchPoints;
+      const event = isTouchInteraction ? 'touchstart' : 'click';
+
+      window.addEventListener(event, (e) => {
         const isClickInside = el.parentElement.contains(e.target);
 
         if (isClickInside) {
