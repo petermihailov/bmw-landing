@@ -1,0 +1,53 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1rem auto;
+  padding: 0 1rem;
+  max-width: 60em;
+  font-size: 1.2rem;
+
+  .logo {
+    height: 3rem;
+  }
+
+  .header-links {
+    display: flex;
+    align-items: center;
+  }
+
+  .navigation {
+    a {
+      margin-right: 1em;
+      text-transform: lowercase;
+      color: #fff;
+    }
+  }
+
+  .languages {
+    display: flex;
+    align-items: center;
+  }
+
+  .lang {
+    $size: 1.5rem;
+    margin-left: .5em;
+    background-repeat: no-repeat;
+    background-size: $size;
+    width: $size;
+    height: $size;
+    vertical-align: middle;
+  }
+
+  .lang-ru {
+    background-image: url('assets/flags/ru.png');
+  }
+
+  .lang-uk {
+    background-image: url('assets/flags/uk.png');
+  }
+
+  .lang-ch {
+    background-image: url('assets/flags/ch.png');
+  }
+}
