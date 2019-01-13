@@ -9,13 +9,9 @@
 
   .event {
     margin-top: 3em;
-
-    &:nth-child(even) {
-      margin-left: auto;
-    }
   }
 
   .card {
-    max-width: 27.5rem;
+    max-width: 100%;
   }
 }

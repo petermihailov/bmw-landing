@@ -55,31 +55,6 @@ h1, h2 {
   }
 }
 
-.gallery {
-  position: relative;
-  width: 35em;
-
-  .glider {
-    width: 35em;
-    height: 25em;
-    overflow: hidden;
-  }
-
-  .glider-next,
-  .glider-prev {
-    top: 50%;
-    transform: translateY(-50%);
-  }
-
-  .glider-next {
-    right: -40px;
-  }
-
-  .glider-prev {
-    left: -40px;
-  }
-}
-
 .soc-icon {
   display: inline-block;
   border-radius: 0.4rem;

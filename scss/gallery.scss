@@ -1,0 +1,35 @@
+.gallery {
+  position: relative;
+
+  .glider {
+    width: 52rem;
+    height: 40rem;
+  }
+
+  .glider-slide {
+    position: relative;
+  }
+
+  .glider-next,
+  .glider-prev {
+    top: 0;
+    width: 20%;
+    height: 100%;
+  }
+
+  .glider-next {
+    right: -40px;
+    text-align: right;
+  }
+
+  .glider-prev {
+    left: -40px;
+    text-align: left;
+  }
+
+  .gallery-card {
+    position: absolute;
+    top: 40rem;
+    transform: translateY(-100%);
+  }
+}

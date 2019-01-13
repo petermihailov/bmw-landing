@@ -2,9 +2,13 @@
     <div class="glider" data-index="{{ idx }}" itemscope itemtype="http://schema.org/ImageGallery">
         {% for item in items %}
             <figure class="item" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                <a href="assets/{{ path }}/{{ item.name }}" itemprop="contentUrl" data-size="{{ item.size }}">
-                    <img src="assets/{{ path }}/min/{{ item.name }}" itemprop="thumbnail" alt=""/>
+                <a href="assets/{{ item.path }}/{{ item.name }}" itemprop="contentUrl" data-size="{{ item.size }}">
+                    <img src="assets/{{ item.path }}/min/{{ item.name }}" itemprop="thumbnail" alt=""/>
                 </a>
+                <figcaption class="card gallery-card">
+                    <div class="title">{{ item.title }}</div>
+                    <div class="description">{{ item.description }}</div>
+                </figcaption>
             </figure>
         {% endfor %}
     </div>
