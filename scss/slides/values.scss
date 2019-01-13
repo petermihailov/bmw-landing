@@ -3,6 +3,11 @@
   align-items: center;
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('assets/backgrounds/values-bg.jpg') no-repeat;
   background-size: cover;
+  min-height: 65rem;
+
+  .content {
+    width: 35em;
+  }
 
   .we {
     margin: 1em 0 3em;

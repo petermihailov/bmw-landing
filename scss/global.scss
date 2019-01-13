@@ -17,19 +17,19 @@ h1, h2 {
 
 .slide {
   position: relative;
-  padding: 6em 2em;
-  min-height: 65em;
+  padding: 6em 4em;
+  overflow: hidden;
 }
 
 .container {
   position: relative;
   z-index: 1;
   margin: 0 auto;
-  width: 50rem;
+  width: 52rem;
 }
 
 .content {
-  width: 50rem;
+  //width: 50rem;
 }
 
 .card {

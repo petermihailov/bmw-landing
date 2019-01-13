@@ -11,9 +11,11 @@
     object-fit: cover;
   }
 
-  .content {
-    position: relative;
+  .container {
     animation: fadeInUp 1.4s cubic-bezier(0.22, 0.61, 0.36, 1);
-    padding: 1em 2em;
+  }
+
+  .content {
+    max-width: 38rem;
   }
 }

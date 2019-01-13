@@ -5,12 +5,10 @@ $height: 1700px;
   background-size: cover;
   min-height: $height;
   max-height: $height;
-  overflow: hidden;
 
   .content {
     position: relative;
     z-index: 2;
-    margin-bottom: 1em;
   }
 
   .val {

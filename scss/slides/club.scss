@@ -1,6 +1,7 @@
 .slide-club {
   background: linear-gradient(rgba(3, 42, 132, .6) 60%, $main-color), url('assets/backgrounds/club-bg.jpg') bottom no-repeat;
   background-size: cover;
+  min-height: 60em;
 
   .club-icon {
     position: absolute;
@@ -12,6 +13,7 @@
   .wheel {
     position: absolute;
     left: -300px;
+    margin-top: 2em;
     width: 600px;
   }
 }

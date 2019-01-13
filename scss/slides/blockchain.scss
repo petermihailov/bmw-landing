@@ -1,13 +1,12 @@
 .slide-blockchain {
   padding-bottom: 0;
+}
 
-  .bg {
-    margin-left: -2em;
-    min-width: 100vw;
+.slide-blockchain-video {
+  padding: 0;
 
-    video {
-      min-width: 100vw;
-      object-fit: cover;
-    }
+  video {
+    min-width: 100%;
+    object-fit: cover;
   }
 }
