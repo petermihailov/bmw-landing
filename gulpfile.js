@@ -9,7 +9,7 @@ const cssbeautify = require('gulp-cssbeautify');
 const browserSync = require('browser-sync');
 
 var paths = {
-  build: './build/',
+  build: './docs/',
   assets: './assets/**/*',
   lib: './lib/**/*',
   scripts: './scripts/**.*',

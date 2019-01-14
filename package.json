@@ -4,9 +4,9 @@
   "scripts": {
     "start": "gulp",
     "build": "npm run build-sass && npm run build-autoprefix && npm run build-cleancss && gulp",
-    "build-sass": "npm run sass-fix && node-sass main.scss build/styles.css",
-    "build-cleancss": "cleancss -o build/styles.min.css build/styles.css",
-    "build-autoprefix": "postcss --use autoprefixer --map false --output build/styles.css build/styles.css",
+    "build-sass": "npm run sass-fix && node-sass main.scss docs/styles.css",
+    "build-cleancss": "cleancss -o docs/styles.min.css docs/styles.css",
+    "build-autoprefix": "postcss --use autoprefixer --map false --output docs/styles.css docs/styles.css",
     "sass-fix": "sass-lint-auto-fix -c .sass-lint.yml"
   },
   "devDependencies": {
