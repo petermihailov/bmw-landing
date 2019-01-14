@@ -1,4 +1,5 @@
 (() => {
+  // Sound control
   const mainSlide = document.getElementById('slide-main');
 
   if (mainSlide) {

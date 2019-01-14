@@ -1,9 +1,11 @@
 #slide-goal {
   display: flex;
   align-items: center;
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('assets/backgrounds/goal-bg.jpg') center top no-repeat;
-  background-size: cover;
   min-height: 65rem;
+
+  .slide-img-bg {
+    z-index: 1;
+  }
 
   .content {
     width: 40em;

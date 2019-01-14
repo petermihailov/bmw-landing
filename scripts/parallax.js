@@ -1,9 +1,10 @@
 (() => {
+  // parallax effect
   const parallaxElements = document.querySelectorAll('.parallax');
   const parallaxQuantity = parallaxElements.length;
 
-  window.addEventListener('scroll', function () {
-    window.requestAnimationFrame(function () {
+  window.addEventListener('scroll', () => {
+    window.requestAnimationFrame(() => {
       for (let i = 0; i < parallaxQuantity; i++) {
         const currentElement =  parallaxElements[i];
         const k = currentElement.dataset.velocity || 0.3;
