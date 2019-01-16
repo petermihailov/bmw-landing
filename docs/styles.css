@@ -737,9 +737,75 @@ h1, h2 {
 
 #slide-club .wheel {
     position: absolute;
+    top: 15em;
     left: -300px;
     margin-top: 2em;
     width: 600px;
+}
+
+#slide-club .rewards-wrapper {
+    margin-top: 6rem;
+}
+
+#slide-club .rewards-wrapper .rewards {
+    display: flex;
+}
+
+#slide-club .rewards-wrapper .reward-card {
+    position: relative;
+    flex: 1;
+    background-color: rgba(3, 42, 132, 0.8);
+    padding-bottom: 8em;
+}
+
+#slide-club .rewards-wrapper .reward-card:not(:last-child) {
+    margin-right: 0.5em;
+}
+
+#slide-club .rewards-wrapper .card-header {
+    padding: .5em;
+    text-align: center;
+}
+
+#slide-club .rewards-wrapper .card-header h3 {
+    margin-bottom: .5em;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+#slide-club .rewards-wrapper .card-bg {
+    display: block;
+    width: 100%;
+    height: 9em;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#slide-club .rewards-wrapper .coin-icon {
+    position: absolute;
+    right: 0;
+    bottom: 1.5em;
+    left: 0;
+    margin: auto;
+    width: 6em;
+    height: 6em;
+}
+
+#slide-club .rewards-wrapper .info {
+    display: flex;
+    justify-content: space-between;
+    margin: 2em auto 0;
+    width: 30em;
+    font-size: 1.2rem;
+}
+
+#slide-club .rewards-wrapper .info span {
+    width: 10rem;
+    text-align: center;
 }
 
 #slide-rewards .rewards {

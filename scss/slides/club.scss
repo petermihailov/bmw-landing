@@ -12,8 +12,72 @@
 
   .wheel {
     position: absolute;
+    top: 15em;
     left: -300px;
     margin-top: 2em;
     width: 600px;
+  }
+
+
+  // rewards
+  .rewards-wrapper {
+    margin-top: 6rem;
+
+    .rewards {
+      display: flex;
+    }
+
+    .reward-card {
+      position: relative;
+      flex: 1;
+      background-color: rgba(3, 42, 132, 0.8);
+      padding-bottom: 8em;
+
+      &:not(:last-child) {
+        margin-right: 0.5em;
+      }
+    }
+
+    .card-header {
+      padding: .5em;
+      text-align: center;
+
+      h3 {
+        margin-bottom: .5em;
+        font-size: 1.2em;
+        font-weight: bold;
+      }
+    }
+
+    .card-bg {
+      display: block;
+      width: 100%;
+      height: 9em;
+      object-fit: cover;
+      user-select: none;
+    }
+
+    .coin-icon {
+      position: absolute;
+      right: 0;
+      bottom: 1.5em;
+      left: 0;
+      margin: auto;
+      width: 6em;
+      height: 6em;
+    }
+
+    .info {
+      display: flex;
+      justify-content: space-between;
+      margin: 2em auto 0;
+      width: 30em;
+      font-size: 1.2rem;
+
+      span {
+        width: 10rem;
+        text-align: center;
+      }
+    }
   }
 }
