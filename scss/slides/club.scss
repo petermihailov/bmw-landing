@@ -11,8 +11,9 @@
   }
 
   .wheel {
+    display: none;
     position: absolute;
-    top: 15em;
+    top: 10em;
     left: -300px;
     margin-top: 2em;
     width: 600px;
@@ -78,6 +79,14 @@
         width: 10rem;
         text-align: center;
       }
+    }
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  #slide-club {
+    .wheel {
+      display: block;
     }
   }
 }
