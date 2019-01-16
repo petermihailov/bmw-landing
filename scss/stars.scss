@@ -1,0 +1,97 @@
+.stars {
+  $duration: .2s;
+
+  display: flex;
+  position: relative;
+  flex-direction: row-reverse;
+  justify-content: center;
+  border-bottom: 1px solid currentColor;
+  padding-bottom: .5em;
+  font-size: 7rem;
+  font-weight: bold;
+
+  [type="radio"] {
+    display: none;
+  }
+
+  .stars_star {
+    position: relative;
+    cursor: pointer;
+    width: 2em;
+    text-align: center;
+  }
+
+  // check
+  .stars_star:before {
+    content: "☆";
+  }
+
+  .stars_star:hover:before,
+  .stars_star:hover ~ .stars_star:before,
+  [type="radio"]:checked ~ .stars_star:before {
+    content: "★";
+  }
+
+  // полосочка
+  [type="radio"]:checked + .stars_star::after {
+    position: absolute;
+    top: 1.1em;
+    left: 50%;
+    border-left: 1px solid currentColor;
+    width: 1px;
+    height: 0.8em;
+    content: '';
+    pointer-events: none;
+  }
+
+  // title switch
+  [type="radio"]:checked + .stars_star + .stars_title {
+    opacity: 1;
+  }
+
+  // description switch
+  [type="radio"]:checked + .stars_star + .stars_title + .stars_description {
+    opacity: 1;
+  }
+
+  .stars_title {
+    $starOffset: 3.1em;
+    $offset: 5.2em;
+
+    position: absolute;
+    top: 5em;
+    transition: opacity $duration;
+    opacity: 0;
+    text-transform: uppercase ;
+    font-size: 0.29em;
+
+    &:nth-of-type(5) {
+      left: $starOffset;
+    }
+
+    &:nth-of-type(4) {
+      left: $offset + $starOffset;
+    }
+
+    &:nth-of-type(3) {
+      left: 2 * $offset + $starOffset;
+    }
+
+    &:nth-of-type(2) {
+      right: $offset + $starOffset;
+    }
+
+    &:nth-of-type(1) {
+      right: $starOffset;
+    }
+  }
+
+  .stars_description {
+    position: absolute;
+    top: 10em;
+    left: 0;
+    transition: opacity $duration;
+    opacity: 0;
+    font-size: 1.4rem;
+  }
+}

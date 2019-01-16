@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* reset */
 html,
 body,
@@ -409,6 +410,95 @@ h1, h2 {
     background-image: url("assets/flags/ch.png");
 }
 
+.stars {
+    display: flex;
+    position: relative;
+    flex-direction: row-reverse;
+    justify-content: center;
+    border-bottom: 1px solid currentColor;
+    padding-bottom: .5em;
+    font-size: 7rem;
+    font-weight: bold;
+}
+
+.stars [type="radio"] {
+    display: none;
+}
+
+.stars .stars_star {
+    position: relative;
+    cursor: pointer;
+    width: 2em;
+    text-align: center;
+}
+
+.stars .stars_star:before {
+    content: "☆";
+}
+
+.stars .stars_star:hover:before,
+  .stars .stars_star:hover ~ .stars_star:before,
+  .stars [type="radio"]:checked ~ .stars_star:before {
+    content: "★";
+}
+
+.stars [type="radio"]:checked + .stars_star::after {
+    position: absolute;
+    top: 1.1em;
+    left: 50%;
+    border-left: 1px solid currentColor;
+    width: 1px;
+    height: 0.8em;
+    content: '';
+    pointer-events: none;
+}
+
+.stars [type="radio"]:checked + .stars_star + .stars_title {
+    opacity: 1;
+}
+
+.stars [type="radio"]:checked + .stars_star + .stars_title + .stars_description {
+    opacity: 1;
+}
+
+.stars .stars_title {
+    position: absolute;
+    top: 5em;
+    transition: opacity 0.2s;
+    opacity: 0;
+    text-transform: uppercase;
+    font-size: 0.29em;
+}
+
+.stars .stars_title:nth-of-type(5) {
+    left: 3.1em;
+}
+
+.stars .stars_title:nth-of-type(4) {
+    left: 8.3em;
+}
+
+.stars .stars_title:nth-of-type(3) {
+    left: 13.5em;
+}
+
+.stars .stars_title:nth-of-type(2) {
+    right: 8.3em;
+}
+
+.stars .stars_title:nth-of-type(1) {
+    right: 3.1em;
+}
+
+.stars .stars_description {
+    position: absolute;
+    top: 10em;
+    left: 0;
+    transition: opacity 0.2s;
+    opacity: 0;
+    font-size: 1.4rem;
+}
+
 /* slides */
 #slide-main {
     padding-top: 10rem;
@@ -459,7 +549,16 @@ h1, h2 {
 
 #slide-start {
     background-color: rgba(0, 0, 0, 0.4);
+    padding-top: 15rem;
     min-height: 65rem;
+}
+
+#slide-start .title {
+    margin-bottom: 1em;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: bold;
 }
 
 #slide-goal {
