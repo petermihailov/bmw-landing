@@ -342,9 +342,12 @@
 
 
 (function () {
-  // ScrollOut
+  var mainVideo = document.querySelector('#slide-main video'); // ScrollOut
+
   ScrollOut({
-    onShown: function onShown(el) {
+    onShown: function onShown(el, _ref) {
+      var intersectY = _ref.intersectY;
+
       if (el.tagName === 'VIDEO') {
         el.play();
         el.style.opacity = '1';
@@ -353,8 +356,15 @@
       if (el.classList.contains('fade')) {
         el.classList.add('fadeIn');
       }
+
+      if (el.id === 'slide-start' && intersectY === -1) {
+        mainVideo.play();
+        mainVideo.style.opacity = '1';
+      }
     },
-    onHidden: function onHidden(el) {
+    onHidden: function onHidden(el, _ref2) {
+      var intersectY = _ref2.intersectY;
+
       if (el.tagName === 'VIDEO') {
         el.pause();
         el.style.opacity = '0';
@@ -362,6 +372,11 @@
 
       if (el.classList.contains('fade')) {
         el.classList.remove('fadeIn');
+      }
+
+      if (el.id === 'slide-start' && intersectY === -1) {
+        mainVideo.pause();
+        mainVideo.style.opacity = '0';
       }
     }
   });

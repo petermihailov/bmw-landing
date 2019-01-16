@@ -457,6 +457,11 @@ h1, h2 {
     background-image: url("assets/sound-off.png");
 }
 
+#slide-start {
+    background-color: rgba(0, 0, 0, 0.4);
+    min-height: 65rem;
+}
+
 #slide-goal {
     min-height: 65rem;
 }
