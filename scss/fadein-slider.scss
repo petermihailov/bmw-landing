@@ -2,12 +2,11 @@
   display: flex;
   position: relative;
   justify-content: space-between;
-  padding-top: 19.5rem;
 
   &_item {
     display: flex;
     position: absolute;
-    top: 0;
+    top: 2.5rem;
     transition: opacity .8s;
     opacity: 0;
     background-color: rgba(255,255,255,0.9);

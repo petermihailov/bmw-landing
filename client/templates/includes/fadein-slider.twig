@@ -1,6 +1,7 @@
 <div class="fadein-slider">
     {% for key, item in items %}
-        <input type="radio" id="fadein-slider-tab-{{ key }}" name="fadein-slider-group" {% if key == 0 %} checked {% endif %}>
+        <input type="radio" id="fadein-slider-tab-{{ key }}"
+               name="fadein-slider-{{ name }}-group" {% if key == 0 %} checked {% endif %}>
         <label for="fadein-slider-tab-{{ key }}" class="fadein-slider_slide-btn">{{ item.name }}</label>
         <div class="fadein-slider_item">
             <div class="fadein-slider_text">
