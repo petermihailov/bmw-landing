@@ -565,10 +565,6 @@ h1, h2 {
     min-height: 65rem;
 }
 
-#slide-goal .slide-img-bg {
-    z-index: 1;
-}
-
 #slide-goal .info {
     margin-top: 1em;
     margin-bottom: 6em;
