@@ -589,33 +589,6 @@ h1, h2 {
     margin-right: 2em;
 }
 
-#slide-values {
-    display: flex;
-    align-items: center;
-    background: url("assets/backgrounds/values-bg.jpg") no-repeat;
-    background-size: cover;
-    min-height: 65rem;
-}
-
-#slide-values .content {
-    width: 35em;
-}
-
-#slide-values .we {
-    margin: 1em 0 3em;
-    font-weight: bold;
-}
-
-#slide-values .we li {
-    margin-bottom: .5em;
-}
-
-#slide-values h3 {
-    margin-bottom: .8em;
-    font-size: 1.2rem;
-    font-weight: bold;
-}
-
 #slide-tube {
     padding-right: 0;
     padding-left: 0;
@@ -830,14 +803,30 @@ h1, h2 {
     text-align: center;
 }
 
+#slide-blockchain {
+    background-color: #032a84;
+}
+
+#slide-blockchain h2 {
+    margin: 0 auto;
+    width: 41rem;
+    text-align: center;
+    font-size: 3rem;
+}
+
 .slide-blockchain-video {
     padding: 0;
 }
 
 .slide-blockchain-video video {
-    min-width: 100%;
+    margin-left: -10rem;
+    min-width: calc(100% + 20rem);
     -o-object-fit: cover;
     object-fit: cover;
+}
+
+#slide-blockchain2 {
+    background-color: #032a84;
 }
 
 #slide-partners {
