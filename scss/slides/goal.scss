@@ -1,18 +1,13 @@
 #slide-goal {
-  display: flex;
-  align-items: center;
   min-height: 65rem;
 
   .slide-img-bg {
     z-index: 1;
   }
 
-  .content {
-    width: 40em;
-  }
-
   .info {
     margin-top: 1em;
+    margin-bottom: 6em;
     font-size: 1.2rem;
 
     p {

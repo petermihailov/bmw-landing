@@ -1,5 +1,6 @@
-<section class="slide lazy" id="slide-goal">
-    <img class="slide-img-bg lazy" src="assets/backgrounds/goal-bg.svg" alt="" data-src="assets/backgrounds/goal-bg.jpg">
+<section class="slide" id="slide-goal">
+    <img class="slide-img-bg lazy" src="assets/backgrounds/goal-bg.svg" alt=""
+         data-src="assets/backgrounds/goal-bg.jpg">
     <div class="container">
         <div class="content">
             <h2>Our Goal</h2>
@@ -16,6 +17,50 @@
                     <li>Asia</li>
                 </ul>
             </div>
+
+            {% include '../includes/fadein-slider.twig' with {
+                items: [{
+                    name: 'Mobile',
+                    text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, vero.',
+                    image: 'https://via.placeholder.com/400x300',
+                },{
+                    name: 'Web',
+                    text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, vero.',
+                    image: 'https://via.placeholder.com/400x300',
+                },{
+                    name: 'Smart TV',
+                    text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, vero.',
+                    image: 'https://via.placeholder.com/400x300',
+                },{
+                    name: 'Projectors',
+                    text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, vero.',
+                    image: 'https://via.placeholder.com/400x300',
+                },{
+                    name: 'Speakers',
+                    text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, vero.',
+                    image: 'https://via.placeholder.com/400x300',
+                },{
+                    name: 'Watches',
+                    text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, vero.',
+                    image: 'https://via.placeholder.com/400x300',
+                },{
+                    name: 'Hotel TV',
+                    text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, vero.',
+                    image: 'https://via.placeholder.com/400x300',
+                },{
+                    name: 'Air&Train',
+                    text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, vero.',
+                    image: 'https://via.placeholder.com/400x300',
+                },{
+                    name: 'Cars',
+                    text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, vero.',
+                    image: 'https://via.placeholder.com/400x300',
+                },{
+                    name: 'VR&AR',
+                    text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, vero.',
+                    image: 'https://via.placeholder.com/400x300',
+                }]
+            } %}
         </div>
     </div>
 </section>
