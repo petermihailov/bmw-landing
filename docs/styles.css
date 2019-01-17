@@ -682,17 +682,21 @@ h1, h2 {
 }
 
 .slide-apps {
-    padding-top: 1em;
+    position: relative;
+    height: 19rem;
     overflow: hidden;
-    pointer-events: none;
 }
 
 .slide-apps .val {
+    position: absolute;
+    top: 5.5rem;
     margin: 1em 0;
     white-space: nowrap;
 }
 
 .slide-apps .apps {
+    position: absolute;
+    right: 0;
     min-width: 3250px;
     height: 85px;
 }
@@ -709,6 +713,9 @@ h1, h2 {
 
 .slide-apps .discounts {
     display: block;
+    position: absolute;
+    top: 9rem;
+    left: 7rem;
     opacity: .7;
     max-width: 3093154.65rem;
     height: 10rem;

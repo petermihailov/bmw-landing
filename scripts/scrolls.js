@@ -34,6 +34,30 @@
     autoplay: false
   });
 
+  const appsParallax = anime({
+    targets: '#apps-line',
+    translateX: 2000,
+    duration: 100,
+    easing: 'linear',
+    autoplay: false
+  });
+
+  const appsValParallax = anime({
+    targets: '#apps-val',
+    translateX: 800,
+    duration: 100,
+    easing: 'linear',
+    autoplay: false
+  });
+
+  const appsDiscountParallax = anime({
+    targets: '#apps-discount',
+    translateX: -1000,
+    duration: 100,
+    easing: 'linear',
+    autoplay: false
+  });
+
   ScrollOut({
     // show
     onShown: function (el, ctx) {
@@ -55,6 +79,12 @@
 
       if (el.id === 'slide-tube') {
         setScrollAnimation(tubeParallax, offsetY, elementHeight);
+      }
+
+      if (el.id === 'slide-apps') {
+        setScrollAnimation(appsParallax, offsetY, elementHeight);
+        setScrollAnimation(appsValParallax, offsetY, elementHeight);
+        setScrollAnimation(appsDiscountParallax, offsetY, elementHeight);
       }
     },
 
