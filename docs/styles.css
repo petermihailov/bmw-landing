@@ -836,8 +836,8 @@ h1, h2 {
 }
 
 .slide-blockchain-video video {
-    margin-left: -10rem;
-    min-width: calc(100% + 20rem);
+    margin-left: -20rem;
+    min-width: calc(100% + 40rem);
     -o-object-fit: cover;
     object-fit: cover;
 }
