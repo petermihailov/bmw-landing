@@ -1,6 +1,7 @@
 #slide-mission {
   .mission-row {
     display: flex;
+    align-items: center;
     margin-bottom: 2rem;
 
     &:nth-child(odd) {
