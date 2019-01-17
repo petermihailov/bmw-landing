@@ -14,7 +14,7 @@
     display: none;
     position: absolute;
     top: 10em;
-    left: -300px;
+    left: -400px;
     margin-top: 2em;
     width: 600px;
   }
@@ -84,7 +84,7 @@
   }
 }
 
-@media screen and (min-width: 1500px) {
+@media screen and (min-width: 1250px) {
   #slide-club {
     .wheel {
       display: block;
