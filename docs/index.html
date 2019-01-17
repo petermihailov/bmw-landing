@@ -183,8 +183,10 @@
     <img class="slide-img-bg lazy" src="assets/backgrounds/tube-bg.svg" alt=""
          data-src="assets/backgrounds/tube-bg.jpg">
 
-    <img src="assets/tube-left.png" alt="" class="tube-parallax tube-left">
-    <img src="assets/tube-right.png" alt="" class="tube-parallax tube-right">
+    <div class="tube-wrapper">
+        <img src="assets/tube-left.png" alt="" class="tube-parallax tube-left">
+        <img src="assets/tube-right.png" alt="" class="tube-parallax tube-right">
+    </div>
 </section>
 <section class="slide with-overlay" id="slide-store">
     <img class="slide-img-bg lazy" src="assets/backgrounds/store-bg.svg" alt="" data-src="assets/backgrounds/store-bg.jpg">
@@ -239,7 +241,7 @@
     </div>
     <img id="apps-discount" class="discounts" src="assets/discounts.jpg" alt="">
 </section>
-<section class="slide" id="slide-club">
+<section class="slide" id="slide-club" data-scroll>
     <div class="container">
         <div class="content">
             <h2>Travel Club <img class="club-icon lazy" data-src="assets/club.gif" src="" alt=""></h2>
@@ -291,7 +293,7 @@
             </div>
         </div>
     </div>
-    <img class="wheel parallax lazy" data-src="assets/wheel.png" src="" alt="" data-velocity="0.22"
+    <img id="club-wheel" class="wheel" src="assets/wheel.png" alt="" data-velocity="0.22"
          data-action="rotate">
 </section>
 <section class="slide with-overlay" id="slide-goal">

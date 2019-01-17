@@ -593,6 +593,12 @@ h1, h2 {
     max-height: 1500px;
 }
 
+#slide-tube .tube-wrapper {
+    position: relative;
+    margin: auto;
+    max-width: 70rem;
+}
+
 #slide-tube .tube-left,
   #slide-tube .tube-right {
     position: absolute;

@@ -280,7 +280,7 @@
   });
   var appsParallax = anime({
     targets: '#apps-line',
-    translateX: 2000,
+    translateX: 1200,
     duration: 100,
     easing: 'linear',
     autoplay: false
@@ -294,7 +294,14 @@
   });
   var appsDiscountParallax = anime({
     targets: '#apps-discount',
-    translateX: -1000,
+    translateX: -600,
+    duration: 100,
+    easing: 'linear',
+    autoplay: false
+  });
+  var clubWheelRotate = anime({
+    targets: '#club-wheel',
+    rotate: 540,
     duration: 100,
     easing: 'linear',
     autoplay: false
@@ -328,6 +335,10 @@
         setScrollAnimation(appsParallax, offsetY, elementHeight);
         setScrollAnimation(appsValParallax, offsetY, elementHeight);
         setScrollAnimation(appsDiscountParallax, offsetY, elementHeight);
+      }
+
+      if (el.id === 'slide-club') {
+        setScrollAnimation(clubWheelRotate, offsetY, elementHeight);
       }
     },
     // hide
