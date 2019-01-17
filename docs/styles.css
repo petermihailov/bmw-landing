@@ -836,6 +836,41 @@ h1, h2 {
     background-color: #032a84;
 }
 
+#slide-mission .mission-row {
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+#slide-mission .mission-row:nth-child(odd) {
+    flex-direction: row-reverse;
+}
+
+#slide-mission .mission-row:nth-child(odd) .mission-row_caption {
+    padding-right: 0;
+    padding-left: 2rem;
+}
+
+#slide-mission .mission-row_image {
+    width: 21rem;
+    height: 14rem;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+#slide-mission .mission-row_caption {
+    padding-right: 2rem;
+    padding-left: 0;
+}
+
+#slide-mission .val {
+    display: block;
+    margin-top: 6rem;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    font-style: normal;
+}
+
 #slide-partners {
     padding-right: 0;
     padding-left: 0;
