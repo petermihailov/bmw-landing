@@ -9,5 +9,7 @@
         target.click();
       })
     })
+
+    container.addEventListener('ontouchmove', (e) => console.log(e));
   }
 })();
