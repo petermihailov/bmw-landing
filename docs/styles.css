@@ -303,15 +303,15 @@ h1, h2 {
 }
 
 .tabs-slider_image {
-    flex: 1;
+    width: 50%;
     height: 100%;
     -o-object-fit: cover;
     object-fit: cover;
 }
 
 .tabs-slider_text {
-    flex: 1;
     padding: 1em;
+    width: 50%;
 }
 
 .tabs-slider_header {
