@@ -224,12 +224,12 @@ h1, h2 {
 }
 
 .with-overlay::before {
-    top: -1px;
+    top: -2px;
     background: linear-gradient(#032a84, rgba(3, 42, 132, 0));
 }
 
 .with-overlay::after {
-    bottom: -1px;
+    bottom: -2px;
     background: linear-gradient(rgba(3, 42, 132, 0), #032a84);
 }
 

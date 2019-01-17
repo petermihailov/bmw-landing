@@ -12,12 +12,12 @@
   }
 
   &::before {
-    top: -1px;
+    top: -2px;
     background: linear-gradient($main-color, rgba(3, 42, 132, 0));
   }
 
   &::after {
-    bottom: -1px;
+    bottom: -2px;
     background: linear-gradient(rgba(3, 42, 132, 0), $main-color);
   }
 
