@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /* reset */
 html,
 body,
@@ -428,28 +427,34 @@ h1, h2 {
 .stars .stars_star {
     position: relative;
     cursor: pointer;
-    width: 2em;
     text-align: center;
     font-weight: bold;
 }
 
-.stars .stars_star:before {
-    content: "☆";
+.stars .stars_star::before {
+    display: block;
+    margin: 0 .3em;
+    background-image: url("assets/star.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 1em;
+    height: 1em;
+    content: " ";
 }
 
-.stars .stars_star:hover:before,
-  .stars .stars_star:hover ~ .stars_star:before,
-  .stars [type="radio"]:checked ~ .stars_star:before {
-    content: "★";
+.stars .stars_star:hover::before,
+  .stars .stars_star:hover ~ .stars_star::before,
+  .stars [type="radio"]:checked ~ .stars_star::before {
+    background-image: url("assets/star-filled.svg");
 }
 
 .stars [type="radio"]:checked + .stars_star::after {
     position: absolute;
-    top: 1.1em;
+    top: .8em;
     left: 50%;
     border-left: 1px solid currentColor;
     width: 1px;
-    height: 0.8em;
+    height: 0.7em;
     content: '';
     pointer-events: none;
 }
@@ -464,7 +469,7 @@ h1, h2 {
 
 .stars .stars_title {
     position: absolute;
-    top: 7.5em;
+    top: 6em;
     transition: opacity 0.2s;
     opacity: 0;
     text-transform: uppercase;
@@ -473,28 +478,28 @@ h1, h2 {
 }
 
 .stars .stars_title:nth-of-type(5) {
-    left: 4.5em;
+    left: 3em;
 }
 
 .stars .stars_title:nth-of-type(4) {
-    left: 12em;
+    left: 11em;
 }
 
 .stars .stars_title:nth-of-type(3) {
-    left: 19.5em;
+    left: 19em;
 }
 
 .stars .stars_title:nth-of-type(2) {
-    right: 12em;
+    right: 11em;
 }
 
 .stars .stars_title:nth-of-type(1) {
-    right: 4.5em;
+    right: 3em;
 }
 
 .stars .stars_description {
     position: absolute;
-    top: 14em;
+    top: 11.5em;
     left: 0;
     transition: opacity 0.2s;
     opacity: 0;
