@@ -8,8 +8,6 @@
       star.addEventListener('mouseenter', ({target}) => {
         target.click();
       })
-    })
-
-    container.addEventListener('ontouchmove', (e) => console.log(e));
+    });
   }
 })();

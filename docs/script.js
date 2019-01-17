@@ -400,8 +400,5 @@
         target.click();
       });
     });
-    container.addEventListener('ontouchmove', function (e) {
-      return console.log(e);
-    });
   }
 })();
