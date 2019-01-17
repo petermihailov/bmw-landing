@@ -15,7 +15,7 @@ $height: 1500px;
   .tube-left,
   .tube-right {
     position: absolute;
-    top: $height;
+    top: $height / 2;
   }
 
   .tube-left {

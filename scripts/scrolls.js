@@ -28,7 +28,7 @@
   // animations
   const tubeParallax = anime({
     targets: '.tube-parallax',
-    translateY: -3000,
+    translateY: -2200,
     duration: 100,
     easing: 'linear',
     autoplay: false
