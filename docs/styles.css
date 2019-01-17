@@ -593,23 +593,17 @@ h1, h2 {
     max-height: 1500px;
 }
 
-#slide-tube .content {
-    position: relative;
-    z-index: 2;
-    margin-bottom: 800px;
+#slide-tube .tube-left,
+  #slide-tube .tube-right {
+    position: absolute;
 }
 
-#slide-tube .val {
-    margin-top: .5em;
-    font-size: 1.2em;
+#slide-tube .tube-left {
+    left: 0;
 }
 
-#slide-tube .parallax {
-    display: block;
-    margin: auto;
-    min-width: 1000px;
-    height: 2467px;
-    pointer-events: none;
+#slide-tube .tube-right {
+    right: 0;
 }
 
 #slide-store {

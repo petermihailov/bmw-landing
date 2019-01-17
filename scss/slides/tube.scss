@@ -6,26 +6,28 @@ $height: 1500px;
   min-height: $height;
   max-height: $height;
 
-  .content {
-    position: relative;
-    z-index: 2;
-    margin-bottom: 800px;
+  .tube-left,
+  .tube-right {
+    position: absolute;
   }
 
-  .val {
-    margin-top: .5em;
-    font-size: 1.2em;
+  .tube-left {
+    left: 0;
   }
 
-  .parallax {
-    display: block;
-    //position: absolute;
-    //top: 700px;
-    //right: -9999px;
-    //left: -9999px;
-    margin: auto;
-    min-width: 1000px;
-    height: 2467px;
-    pointer-events: none;
+ .tube-right {
+    right: 0;
   }
+
+  //.parallax {
+  //  display: block;
+  //  //position: absolute;
+  //  //top: 700px;
+  //  //right: -9999px;
+  //  //left: -9999px;
+  //  margin: auto;
+  //  min-width: 1000px;
+  //  height: 2467px;
+  //  pointer-events: none;
+  //}
 }
