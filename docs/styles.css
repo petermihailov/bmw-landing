@@ -883,6 +883,35 @@ h1, h2 {
     font-style: normal;
 }
 
+#slide-inspirers h2 {
+    text-align: center;
+}
+
+#slide-inspirers .inspires {
+    display: flex;
+}
+
+#slide-inspirers .inspirer-card {
+    text-align: center;
+}
+
+#slide-inspirers .inspirer-card:not(:last-child) {
+    margin-right: 0.5em;
+}
+
+#slide-inspirers .inspirer-card_header > h3 {
+    margin-bottom: .5em;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+#slide-inspirers .inspirer-card_bg {
+    width: 10em;
+    height: 7.5em;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
 #slide-partners {
     padding-right: 0;
     padding-left: 0;

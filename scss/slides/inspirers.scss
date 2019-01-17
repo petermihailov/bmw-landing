@@ -1,0 +1,31 @@
+#slide-inspirers {
+  h2 {
+    text-align: center;
+  }
+
+  .inspires {
+    display: flex;
+  }
+
+  .inspirer-card {
+    text-align: center;
+
+    &:not(:last-child) {
+      margin-right: 0.5em;
+    }
+
+    &_header {
+      & > h3 {
+        margin-bottom: .5em;
+        font-size: 1.2em;
+        font-weight: bold;
+      }
+    }
+
+    &_bg {
+      width: 10em;
+      height: 7.5em;
+      object-fit: cover;
+    }
+  }
+}
