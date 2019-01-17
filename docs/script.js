@@ -388,3 +388,17 @@
     });
   }
 })();
+
+(function () {
+  var container = document.getElementById('main-stars');
+
+  if (container) {
+    var stars = container.querySelectorAll('.stars_star');
+    stars.forEach(function (star) {
+      star.addEventListener('mouseenter', function (_ref2) {
+        var target = _ref2.target;
+        target.click();
+      });
+    });
+  }
+})();
