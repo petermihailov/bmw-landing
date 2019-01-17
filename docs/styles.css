@@ -284,13 +284,13 @@ h1, h2 {
     width: 100%;
 }
 
-.fadein-slider {
+.tabs-slider {
     display: flex;
     position: relative;
-    justify-content: space-between;
+    margin-bottom: 19.5rem;
 }
 
-.fadein-slider_item {
+.tabs-slider_item {
     display: flex;
     position: absolute;
     top: 2.5rem;
@@ -302,19 +302,19 @@ h1, h2 {
     color: #222;
 }
 
-.fadein-slider_image {
+.tabs-slider_image {
     flex: 1;
     height: 100%;
     -o-object-fit: cover;
     object-fit: cover;
 }
 
-.fadein-slider_text {
+.tabs-slider_text {
     flex: 1;
     padding: 1em;
 }
 
-.fadein-slider_header {
+.tabs-slider_header {
     margin-bottom: .5em;
     text-align: center;
     text-transform: uppercase;
@@ -322,8 +322,9 @@ h1, h2 {
     font-weight: bold;
 }
 
-.fadein-slider_slide-btn {
+.tabs-slider_slide-btn {
     transition: border .2s;
+    margin-right: 1em;
     outline: none;
     border: 1px solid transparent;
     border-bottom: 1px solid #fff;
@@ -336,19 +337,19 @@ h1, h2 {
     font-weight: bold;
 }
 
-.fadein-slider_slide-btn:hover {
+.tabs-slider_slide-btn:hover {
     border: 1px solid #fff;
 }
 
-.fadein-slider [type="radio"] {
+.tabs-slider [type="radio"] {
     display: none;
 }
 
-.fadein-slider [type="radio"]:checked + label {
+.tabs-slider [type="radio"]:checked + label {
     border: 1px solid #fff;
 }
 
-.fadein-slider [type="radio"]:checked + label + .fadein-slider_item {
+.tabs-slider [type="radio"]:checked + label + .tabs-slider_item {
     opacity: 1;
 }
 
@@ -958,6 +959,10 @@ h1, h2 {
 
 #slide-team .card.to-right .description {
     flex-direction: row-reverse;
+}
+
+#slide-tabs .tabs {
+    margin-top: 10rem;
 }
 
 /*# sourceMappingURL=styles.css.map */

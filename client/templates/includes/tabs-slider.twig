@@ -1,0 +1,14 @@
+<div class="tabs-slider">
+    {% for key, item in items %}
+        <input type="radio" id="tabs-slider-{{ name }}-{{ key }}"
+               name="tabs-slider-{{ name }}-group" {% if key == 0 %} checked {% endif %}>
+        <label for="tabs-slider-{{ name }}-{{ key }}" class="tabs-slider_slide-btn">{{ item.name }}</label>
+        <div class="tabs-slider_item">
+            <div class="tabs-slider_text">
+                <h3 class="tabs-slider_header">{{ item.name }}</h3>
+                {{ item.text }}
+            </div>
+            <img class="tabs-slider_image lazy" data-src="{{ item.image }}" src="" alt=""/>
+        </div>
+    {% endfor %}
+</div>

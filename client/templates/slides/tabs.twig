@@ -1,0 +1,42 @@
+<section class="slide with-overlay" id="slide-tabs">
+    <div class="container">
+        <div class="content">
+            <h2>Title</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, at distinctio eaque, facere fugiat
+                illum iusto laboriosam minus necessitatibus non officiis pariatur, placeat praesentium quidem totam vel
+                velit! Ea, neque?</p>
+
+
+            <div class="tabs">
+                {% include '../includes/tabs-slider.twig' with {
+                    name: 'tabs',
+                    items: [{
+                        name: 'Mobile',
+                        text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, vero.',
+                        image: 'https://via.placeholder.com/400x300',
+                    },{
+                        name: 'Web',
+                        text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, vero.',
+                        image: 'https://via.placeholder.com/400x300',
+                    },{
+                        name: 'Smart TV',
+                        text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, vero.',
+                        image: 'https://via.placeholder.com/400x300',
+                    },{
+                        name: 'Projectors',
+                        text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, vero.',
+                        image: 'https://via.placeholder.com/400x300',
+                    },{
+                        name: 'Speakers',
+                        text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, vero.',
+                        image: 'https://via.placeholder.com/400x300',
+                    },{
+                        name: 'Watches',
+                        text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, vero.',
+                        image: 'https://via.placeholder.com/400x300',
+                    }]
+                } %}
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,7 +1,7 @@
-.fadein-slider {
+.tabs-slider {
   display: flex;
   position: relative;
-  justify-content: space-between;
+  margin-bottom: 19.5rem;
 
   &_item {
     display: flex;
@@ -36,6 +36,7 @@
 
   &_slide-btn {
     transition: border .2s;
+    margin-right: 1em;
     outline: none;
     border: 1px solid transparent;
     border-bottom: 1px solid #fff;
@@ -60,7 +61,7 @@
     border: 1px solid #fff;
   }
 
-  [type="radio"]:checked + label + .fadein-slider_item {
+  [type="radio"]:checked + label + .tabs-slider_item {
     opacity:  1;
   }
 }
