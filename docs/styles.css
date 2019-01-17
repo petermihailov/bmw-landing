@@ -942,7 +942,7 @@ h1, h2 {
 }
 
 #slide-team .team figure:nth-child(even) .card {
-    right: 11.75rem;
+    right: 8.75rem;
     left: auto;
 }
 
@@ -955,9 +955,9 @@ h1, h2 {
 #slide-team .card {
     position: absolute;
     bottom: 2.5rem;
-    left: 11.75rem;
+    left: 8.75rem;
     z-index: 1;
-    min-width: 20.75rem;
+    min-width: 21.75rem;
 }
 
 #slide-team .card .description {
