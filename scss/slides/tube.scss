@@ -9,6 +9,7 @@ $height: 1500px;
   .tube-left,
   .tube-right {
     position: absolute;
+    top: $height;
   }
 
   .tube-left {
@@ -18,16 +19,4 @@ $height: 1500px;
  .tube-right {
     right: 0;
   }
-
-  //.parallax {
-  //  display: block;
-  //  //position: absolute;
-  //  //top: 700px;
-  //  //right: -9999px;
-  //  //left: -9999px;
-  //  margin: auto;
-  //  min-width: 1000px;
-  //  height: 2467px;
-  //  pointer-events: none;
-  //}
 }

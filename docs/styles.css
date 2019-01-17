@@ -596,6 +596,7 @@ h1, h2 {
 #slide-tube .tube-left,
   #slide-tube .tube-right {
     position: absolute;
+    top: 1500px;
 }
 
 #slide-tube .tube-left {

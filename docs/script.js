@@ -1,6 +1,23 @@
 "use strict";
 
 (function () {
+  // parallax tube
+  var slowAnimation = anime({
+    targets: '.tube-parallax',
+    translateY: -1500,
+    duration: 1000,
+    easing: 'linear',
+    autoplay: false
+  });
+  var seekInput = document.querySelector('.seek');
+
+  seekInput.oninput = function () {
+    console.log(slowAnimation.duration * (seekInput.value / 100));
+    slowAnimation.seek(slowAnimation.duration * (seekInput.value / 100));
+  };
+})();
+
+(function () {
   /*
   * PhotoSwipe
   * */
@@ -342,11 +359,44 @@
 
 
 (function () {
-  var mainVideo = document.querySelector('#slide-main video'); // ScrollOut
+  // utils
+  var calcScrollPercent = function calcScrollPercent(startScrollPosition, step) {
+    var val = (window.scrollY - startScrollPosition) / step;
+    if (val > 100) return 100;
+    if (val < 0) return 0;
+    return val;
+  };
 
+  var setScrollAnimation = function setScrollAnimation(animation, offsetY, elementHeight) {
+    var wh = window.innerHeight;
+    var startScrollPosition = offsetY - wh;
+    var step = (elementHeight + wh) / 100;
+
+    if (!animation.listen) {
+      document.addEventListener('scroll', function () {
+        var value = calcScrollPercent(startScrollPosition, step);
+        animation.seek(value);
+      });
+      animation.listen = true;
+    }
+  }; // DOM
+
+
+  var mainVideo = document.querySelector('#slide-main video'); // animations
+
+  var tubeParallax = anime({
+    targets: '.tube-parallax',
+    translateY: -3000,
+    duration: 100,
+    easing: 'linear',
+    autoplay: false
+  });
   ScrollOut({
-    onShown: function onShown(el, _ref) {
-      var intersectY = _ref.intersectY;
+    // show
+    onShown: function onShown(el, ctx) {
+      var intersectY = ctx.intersectY,
+          offsetY = ctx.offsetY,
+          elementHeight = ctx.elementHeight;
 
       if (el.tagName === 'VIDEO') {
         el.play();
@@ -361,9 +411,14 @@
         mainVideo.play();
         mainVideo.style.opacity = '1';
       }
+
+      if (el.id === 'slide-tube') {
+        setScrollAnimation(tubeParallax, offsetY, elementHeight);
+      }
     },
-    onHidden: function onHidden(el, _ref2) {
-      var intersectY = _ref2.intersectY;
+    // hide
+    onHidden: function onHidden(el, _ref) {
+      var intersectY = _ref.intersectY;
 
       if (el.tagName === 'VIDEO') {
         el.pause();
@@ -378,6 +433,8 @@
         mainVideo.pause();
         mainVideo.style.opacity = '0';
       }
+
+      if (el.id === 'slide-tube') {}
     }
   });
 })();
