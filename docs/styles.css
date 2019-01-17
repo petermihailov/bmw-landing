@@ -771,6 +771,7 @@ h1, h2 {
 #slide-club .rewards-wrapper .card-header {
     padding: .5em;
     text-align: center;
+    font-size: .875rem;
 }
 
 #slide-club .rewards-wrapper .card-header h3 {
@@ -783,12 +784,12 @@ h1, h2 {
     display: block;
     width: 100%;
     height: 9em;
-    -o-object-fit: cover;
-    object-fit: cover;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    -o-object-fit: cover;
+    object-fit: cover;
 }
 
 #slide-club .rewards-wrapper .coin-icon {
