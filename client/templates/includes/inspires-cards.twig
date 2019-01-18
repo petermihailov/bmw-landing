@@ -1,15 +1,13 @@
-<div class="gallery" tabindex="0">
-    <div class="gallery-glider" data-index="{{ idx }}" itemscope itemtype="http://schema.org/ImageGallery">
+<div class="inspires">
+    <div class="inspires-glider inspires-list" data-index="{{ idx }}">
         {% for item in items %}
-            <figure class="item" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                <a href="assets/{{ item.path }}/{{ item.name }}" itemprop="contentUrl" data-size="{{ item.size }}">
-                    <img src="assets/{{ item.path }}/min/{{ item.name }}" itemprop="thumbnail" alt=""/>
-                </a>
-                <figcaption class="card gallery-card">
-                    <div class="title">{{ item.title }}</div>
-                    <div class="description">{{ item.description }}</div>
-                </figcaption>
-            </figure>
+            <div class="inspires-card">
+                <img class="inspires-card_bg lazy" data-src="{{ item.img }}" src="" alt="">
+                <div class="inspires-card_header">
+                    <h3>{{ item.title }}</h3>
+                    <p>{{ item.description }}</p>
+                </div>
+            </div>
         {% endfor %}
     </div>
     <button role="button" aria-label="Previous" class="glider-prev">

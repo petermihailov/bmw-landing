@@ -180,7 +180,7 @@
 
   window.addEventListener('DOMContentLoaded', function () {
     var delay = 3000;
-    var elements = document.querySelectorAll('.glider');
+    var elements = document.querySelectorAll('.gallery-glider');
     elements.forEach(function (el) {
       var idx = el.dataset.index;
       var prev = "[data-index=\"".concat(idx, "\"] ~ .glider-prev");
@@ -215,6 +215,24 @@
           }
         }
       });
+    });
+  });
+})();
+
+(function () {
+  window.addEventListener('DOMContentLoaded', function () {
+    var el = document.querySelector('.inspires-glider');
+    var idx = el.dataset.index;
+    var prev = "[data-index=\"".concat(idx, "\"] ~ .glider-prev");
+    var next = "[data-index=\"".concat(idx, "\"] ~ .glider-next");
+    var glider = new Glider(el, {
+      slidesToShow: 5,
+      slidesToScroll: 5,
+      draggable: false,
+      arrows: {
+        prev: prev,
+        next: next
+      }
     });
   });
 })();

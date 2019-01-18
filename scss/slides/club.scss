@@ -1,5 +1,5 @@
 #slide-club {
-  background: linear-gradient(rgba(3, 42, 132, .6) 60%, $main-color), url('assets/backgrounds/club-bg.jpg') bottom no-repeat;
+  background: linear-gradient(rgba($main-color, .6) 60%, $main-color), url('assets/backgrounds/club-bg.jpg') bottom no-repeat;
   background-size: cover;
   min-height: 60em;
 
@@ -31,7 +31,7 @@
     .reward-card {
       position: relative;
       flex: 1;
-      background-color: rgba(3, 42, 132, 0.8);
+      background-color: rgba($main-color, .8);
       padding-bottom: 8em;
 
       &:not(:last-child) {

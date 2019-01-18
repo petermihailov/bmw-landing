@@ -175,7 +175,7 @@
   * */
   window.addEventListener('DOMContentLoaded', function () {
     const delay = 3000;
-    const elements = document.querySelectorAll('.glider');
+    const elements = document.querySelectorAll('.gallery-glider');
 
     elements.forEach((el) => {
       const idx = el.dataset.index;
