@@ -141,7 +141,7 @@ h1, h2 {
     padding: 1em;
     max-width: 26em;
     color: #000;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
 }
 
 .card.to-right {
@@ -287,6 +287,7 @@ h1, h2 {
 .tabs-slider {
     display: flex;
     position: relative;
+    margin-top: 5rem;
     margin-bottom: 19.5rem;
 }
 
@@ -303,7 +304,7 @@ h1, h2 {
 }
 
 .tabs-slider_image {
-    width: 50%;
+    width: 28.125rem;
     height: 100%;
     -o-object-fit: cover;
     object-fit: cover;
@@ -311,7 +312,7 @@ h1, h2 {
 
 .tabs-slider_text {
     padding: 1em;
-    width: 50%;
+    width: 23.875rem;
 }
 
 .tabs-slider_header {
@@ -556,9 +557,10 @@ h1, h2 {
 }
 
 #slide-start {
-    background-color: rgba(0, 0, 0, 0.4);
+    border-top: 1px solid #aaa;
+    background-color: rgba(0, 0, 0, 0.1);
     padding-top: 15rem;
-    min-height: 65rem;
+    min-height: 55rem;
 }
 
 #slide-start .title {
@@ -570,7 +572,16 @@ h1, h2 {
 }
 
 #slide-goal {
-    min-height: 65rem;
+    min-height: 45rem;
+}
+
+#slide-goal .content {
+    background: url("assets/backgrounds/goal-content-bg.jpg") top no-repeat;
+    background-size: cover;
+}
+
+#slide-goal .half-left {
+    width: 50%;
 }
 
 #slide-goal .info {
@@ -595,8 +606,8 @@ h1, h2 {
 #slide-tube {
     padding-right: 0;
     padding-left: 0;
-    min-height: 1500px;
-    max-height: 1500px;
+    min-height: 1400px;
+    max-height: 1400px;
 }
 
 #slide-tube .tube-wrapper {
@@ -608,7 +619,7 @@ h1, h2 {
 #slide-tube .tube-left,
   #slide-tube .tube-right {
     position: absolute;
-    top: 750px;
+    top: 700px;
 }
 
 #slide-tube .tube-left {
@@ -829,13 +840,14 @@ h1, h2 {
 
 #slide-blockchain {
     background-color: #032a84;
+    padding: 3rem 4rem;
 }
 
 #slide-blockchain h2 {
     margin: 0 auto;
     width: 50rem;
     text-align: center;
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
 .slide-blockchain-video {
