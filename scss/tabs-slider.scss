@@ -1,6 +1,6 @@
 .tabs-slider {
   display: flex;
-  position: relative;
+  position: relative;  
   margin-bottom: 19.5rem;
 
   &_item {
@@ -16,14 +16,14 @@
   }
 
   &_image {
-    width: 50%;
+    width: 28.125rem;
     height: 100%;
     object-fit: cover;
   }
 
   &_text {
     padding: 1em;
-    width: 50%;
+    width: 23.875rem;
   }
 
   &_header {

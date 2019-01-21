@@ -13,12 +13,12 @@
 
   &::before {
     top: -2px;
-    background: linear-gradient($main-color, rgba($main-color, 0));
+    background: linear-gradient($main-color, rgba($main-color, 0) 50%);
   }
 
   &::after {
     bottom: -2px;
-    background: linear-gradient(rgba($main-color, 0), $main-color);
+    background: linear-gradient(rgba($main-color, 0) 50%, $main-color);
   }
 
   &.overlay-zindex_1 {
