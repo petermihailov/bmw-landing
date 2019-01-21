@@ -37,10 +37,11 @@
   }
 
   .lang {
-    $size: 1.5rem;
+    $size: 2rem;
     margin-left: .5em;
     background-repeat: no-repeat;
-    background-size: $size;
+    background-position: center;
+	background-size: $size;
     width: $size;
     height: $size;
     vertical-align: middle;
@@ -57,4 +58,12 @@
   .lang-ch {
     background-image: url('assets/flags/ch.png');
   }
+  
+  .lang-fr {
+    background-image: url('assets/flags/fr.png');
+  }  
+  
+  .lang-jp {
+    background-image: url('assets/flags/jp.png');
+  }    
 }

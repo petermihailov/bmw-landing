@@ -225,12 +225,12 @@ h1, h2 {
 
 .with-overlay::before {
     top: -2px;
-    background: linear-gradient(#032a84, rgba(3, 42, 132, 0));
+    background: linear-gradient(#032a84, rgba(3, 42, 132, 0) 50%);
 }
 
 .with-overlay::after {
     bottom: -2px;
-    background: linear-gradient(rgba(3, 42, 132, 0), #032a84);
+    background: linear-gradient(rgba(3, 42, 132, 0) 50%, #032a84);
 }
 
 .with-overlay.overlay-zindex_1::before, .with-overlay.overlay-zindex_1::after {
@@ -287,7 +287,6 @@ h1, h2 {
 .tabs-slider {
     display: flex;
     position: relative;
-    margin-top: 5rem;
     margin-bottom: 19.5rem;
 }
 
@@ -394,9 +393,10 @@ h1, h2 {
 .header .lang {
     margin-left: .5em;
     background-repeat: no-repeat;
-    background-size: 1.5rem;
-    width: 1.5rem;
-    height: 1.5rem;
+    background-position: center;
+    background-size: 2rem;
+    width: 2rem;
+    height: 2rem;
     vertical-align: middle;
 }
 
@@ -410,6 +410,14 @@ h1, h2 {
 
 .header .lang-ch {
     background-image: url("assets/flags/ch.png");
+}
+
+.header .lang-fr {
+    background-image: url("assets/flags/fr.png");
+}
+
+.header .lang-jp {
+    background-image: url("assets/flags/jp.png");
 }
 
 .stars {
@@ -575,8 +583,12 @@ h1, h2 {
     min-height: 45rem;
 }
 
+#slide-goal .top-5 {
+    margin-top: 5rem;
+}
+
 #slide-goal .content {
-    background: url("assets/backgrounds/goal-content-bg.jpg") top no-repeat;
+    background: url("assets/backgrounds/goal-content-bg.png") top right no-repeat;
     background-size: cover;
 }
 
@@ -862,7 +874,9 @@ h1, h2 {
 }
 
 #slide-blockchain2 {
-    background-color: #032a84;
+    background: linear-gradient(rgba(3, 42, 132, 0.6) 60%, #032a84), url("assets/backgrounds/blockchain2-bg.jpg") bottom no-repeat;
+    background-size: cover;
+    min-height: 40em;
 }
 
 #slide-mission .mission-row {
@@ -927,7 +941,7 @@ h1, h2 {
 }
 
 #slide-inspirers .inspires-card {
-    border: 1px solid #032a84;
+    border: 1px solid #bfcfff;
     background-color: rgba(3, 42, 132, 0.6);
     text-align: center;
 }

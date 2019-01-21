@@ -1,4 +1,6 @@
 #slide-blockchain2 {
-  background-color: $main-color;
+  background: linear-gradient(rgba($main-color, .6) 60%, $main-color), url('assets/backgrounds/blockchain2-bg.jpg') bottom no-repeat;
+  background-size: cover;
+  min-height: 40em;  
 }
 
