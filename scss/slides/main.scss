@@ -35,11 +35,11 @@
     height: $size;
 
     &.sound-on {
-      background-image: url("assets/sound-on.png");
+      background-image: url("/assets/sound-on.png");
     }
 
     &.sound-off {
-      background-image: url("assets/sound-off.png");
+      background-image: url("/assets/sound-off.png");
     }
   }
 }

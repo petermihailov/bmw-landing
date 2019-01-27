@@ -78,14 +78,14 @@ h1, h2 {
   height: 1.6rem;
 
   &.ig {
-    background-image: url('assets/soc/ig.png');
+    background-image: url("/assets/soc/ig.png");
   }
 
   &.fb {
-    background-image: url('assets/soc/fb.png');
+    background-image: url("/assets/soc/fb.png");
   }
 
   &.in {
-    background-image: url('assets/soc/in.png');
+    background-image: url("/assets/soc/in.png");
   }
 }
