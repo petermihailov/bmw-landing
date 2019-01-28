@@ -1,0 +1,30 @@
+.with-overlay {
+  position: relative;
+
+  &::before,
+  &::after {
+    position: absolute;
+    right: 0;
+    left: 0;
+    height: 25em;
+    content: '';
+    pointer-events: none
+  }
+
+  &::before {
+    top: -2px;
+    background: linear-gradient($main-color, rgba($main-color, 0) 50%);
+  }
+
+  &::after {
+    bottom: -2px;
+    background: linear-gradient(rgba($main-color, 0) 50%, $main-color);
+  }
+
+  &.overlay-zindex_1 {
+    &::before,
+    &::after {
+      z-index: 1;
+    }
+  }
+}

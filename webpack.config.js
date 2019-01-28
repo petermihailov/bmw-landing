@@ -1,9 +1,9 @@
 const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
+const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 
 module.exports = {
-  entry: ['./scss/_app.scss'],
+  entry: ['./src/scss/_app.scss'],
   output: {
     path: path.resolve(__dirname, 'dist'),
   },
@@ -18,12 +18,19 @@ module.exports = {
       use: [
         // fallback to style-loader in development
         MiniCssExtractPlugin.loader,
-        'css-loader',
+        {
+          loader: 'css-loader',
+          options: {
+            url: false,
+          },
+        },
         'postcss-loader',
         {
           loader: 'sass-loader',
           options: {
-            includePaths: ['scss/'],
+            includePaths: ['/src/scss/'],
+            sourceMap: true,
+            sourceMapContents: false,
           },
         },
       ],
@@ -32,8 +39,8 @@ module.exports = {
 
   optimization: {
     minimizer: [
-      new OptimizeCSSAssetsPlugin({})
-    ]
+      new OptimizeCSSAssetsPlugin({}),
+    ],
   },
 
   plugins: [

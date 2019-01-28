@@ -1,0 +1,38 @@
+#slide-mission {
+
+  .mission-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+
+    &:nth-child(odd) {
+      flex-direction: row-reverse;
+
+      .mission-row_caption {
+        padding-right: 0;
+        padding-left: 2rem;
+      }
+    }
+
+    &_image {
+      width: 21rem;
+      height: 14rem;
+      object-fit: cover;
+    }
+
+    &_caption {
+      padding-right: 2rem;
+      padding-left: 0;
+    }
+  }
+
+  .val {
+    display: block;
+    margin-top: 6rem;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    font-style: normal;
+  }
+}
+

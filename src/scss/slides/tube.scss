@@ -1,0 +1,28 @@
+$height: 1400px;
+
+#slide-tube {
+  padding-right: 0;
+  padding-left: 0;
+  min-height: $height;
+  max-height: $height;
+
+  .tube-wrapper {
+    position: relative;
+    margin: auto;
+    max-width: 70rem;
+  }
+
+  .tube-left,
+  .tube-right {
+    position: absolute;
+    top: $height / 2;
+  }
+
+  .tube-left {
+    left: 0;
+  }
+
+ .tube-right {
+    right: 0;
+  }
+}

@@ -1,0 +1,93 @@
+#slide-club {
+  background: linear-gradient(rgba($main-color, .6) 60%, $main-color), url(assets/backgrounds/club-bg.jpg) bottom no-repeat;
+  background-size: cover;
+  min-height: 60em;
+
+  .club-icon {
+    position: absolute;
+    margin-left: 2rem;
+    width: 4rem;
+    height: 5rem;
+  }
+
+  .wheel {
+    display: none;
+    position: absolute;
+    top: 10em;
+    left: -400px;
+    margin-top: 2em;
+    width: 600px;
+  }
+
+
+  // rewards
+  .rewards-wrapper {
+    margin-top: 6rem;
+
+    .rewards {
+      display: flex;
+    }
+
+    .reward-card {
+      position: relative;
+      flex: 1;
+      background-color: rgba($main-color, .8);
+      padding-bottom: 8em;
+
+      &:not(:last-child) {
+        margin-right: 0.5em;
+      }
+    }
+
+    .card-header {
+      padding: .5em;
+      text-align: center;
+      font-size: .875rem;
+
+      h3 {
+        margin-bottom: .5em;
+        font-size: 1.2em;
+        font-weight: bold;
+      }
+    }
+
+    .card-bg {
+      display: block;
+      width: 100%;
+      height: 9em;
+      user-select: none;
+      object-fit: cover;
+    }
+
+    .coin-icon {
+      position: absolute;
+      right: 0;
+      bottom: 1.5em;
+      left: 0;
+      margin: auto;
+      width: 6em;
+      height: 6em;
+    }
+
+    .info {
+      display: flex;
+      justify-content: space-between;
+      margin: 2em auto 0;
+      width: 30em;
+      font-size: 1.2rem;
+
+      span {
+        width: 10rem;
+        text-align: center;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1250px) {
+  #slide-club {
+    .wheel {
+      display: block;
+    }
+  }
+}

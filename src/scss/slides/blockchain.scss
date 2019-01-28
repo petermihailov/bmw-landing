@@ -1,0 +1,21 @@
+#slide-blockchain {
+  background-color: $main-color;
+  padding: 3rem 4rem;
+
+  h2 {
+    margin: 0 auto;
+    width: 50rem;
+    text-align: center;
+    font-size: 2rem;
+  }
+}
+
+.slide-blockchain-video {
+  padding: 0;
+
+  video {
+    margin-left: -20rem;
+    min-width: calc(100% + 40rem);
+    object-fit: cover;
+  }
+}
