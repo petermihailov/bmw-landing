@@ -2,6 +2,8 @@ const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
+const CleanWebpackPlugin = require('clean-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   entry: [
@@ -59,6 +61,10 @@ module.exports = {
     new HtmlWebpackPlugin({
       filename: 'index.html',
       template: './src/templates/index.twig',
+      inject: true,
+      hash: true,
     }),
+    new CleanWebpackPlugin('./dist'),
+    new CopyWebpackPlugin([{from: './src/assets', to: 'assets'}]),
   ],
 };
