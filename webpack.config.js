@@ -1,15 +1,18 @@
 const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 
 module.exports = {
-  entry: ['./src/scss/_app.scss'],
+  entry: [
+    './src/scss/_app.scss',
+  ],
   output: {
     path: path.resolve(__dirname, 'dist'),
   },
 
   resolve: {
-    extensions: ['.scss'],
+    extensions: ['.scss', '.twig'],
   },
 
   module: {
@@ -34,6 +37,12 @@ module.exports = {
           },
         },
       ],
+    }, {
+      test: /\.twig$/,
+      loader: 'twig-loader',
+      options: {
+        // See options section below
+      },
     }],
   },
 
@@ -46,6 +55,10 @@ module.exports = {
   plugins: [
     new MiniCssExtractPlugin({
       filename: 'style.css',
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'index.html',
+      template: './src/templates/index.twig',
     }),
   ],
 };
