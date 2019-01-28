@@ -7,6 +7,11 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   entry: [
+    './node_modules/intersection-observer/intersection-observer.js',
+    './src/js/index.js',
+    './node_modules/glider-js/glider.min.css',
+    './node_modules/photoswipe/dist/photoswipe.css',
+    './node_modules/photoswipe/dist/default-skin/default-skin.css',
     './src/scss/_app.scss',
   ],
   output: {
@@ -14,12 +19,27 @@ module.exports = {
   },
 
   resolve: {
-    extensions: ['.scss', '.twig'],
+    extensions: ['.js', '.scss', '.twig'],
   },
 
   module: {
     rules: [{
-      test: /\.scss$/,
+      test: /\.js$/,
+      exclude: /node_modules/,
+      use: {
+        loader: 'babel-loader',
+        options: {
+          presets: [
+            ['@babel/preset-env',
+              {
+                useBuiltIns: 'usage',
+              },
+            ],
+          ],
+        },
+      },
+    }, {
+      test: /\.s?css$/,
       use: [
         // fallback to style-loader in development
         MiniCssExtractPlugin.loader,
@@ -42,9 +62,6 @@ module.exports = {
     }, {
       test: /\.twig$/,
       loader: 'twig-loader',
-      options: {
-        // See options section below
-      },
     }],
   },
 
