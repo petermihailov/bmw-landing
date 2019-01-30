@@ -15,7 +15,7 @@ module.exports = {
     './src/scss/index.scss',
   ],
   output: {
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, 'docs'),
   },
 
   resolve: {
@@ -41,7 +41,6 @@ module.exports = {
     }, {
       test: /\.s?css$/,
       use: [
-        // fallback to style-loader in development
         MiniCssExtractPlugin.loader,
         {
           loader: 'css-loader',
@@ -85,7 +84,7 @@ module.exports = {
       inject: true,
       hash: true,
     }),
-    new CleanWebpackPlugin('./dist'),
+    new CleanWebpackPlugin('./docs'),
     new CopyWebpackPlugin([{from: './src/assets', to: 'assets'}]),
   ],
 };
