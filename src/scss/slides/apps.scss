@@ -1,0 +1,40 @@
+.slide-apps {
+  position: relative;
+  height: 19rem;
+  overflow: hidden;
+  pointer-events: none;
+
+  .val {
+    position: absolute;
+    top: 5.5rem;
+    margin: 1em 0;
+    white-space: nowrap;
+  }
+
+  .apps {
+    position: absolute;
+    right: 0;
+    min-width: 3250px;
+    height: 85px;
+  }
+
+  .app {
+    border-radius: 50%;
+    width: 5em;
+    height: 5em;
+
+    &:not(:last-child) {
+      margin-right: 1em;
+    }
+  }
+
+  .discounts {
+    display: block;
+    position: absolute;
+    top: 9rem;
+    left: 7rem;
+    opacity: .7;
+    max-width: 3093154.65rem;
+    height: 10rem;
+  }
+}

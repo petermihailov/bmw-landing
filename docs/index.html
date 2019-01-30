@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+<meta charset="UTF-8">
 <meta name="viewport" content="width=1024">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <title>BEMYWAYS</title>
@@ -13,13 +13,8 @@
 <meta content="BE MY WAYS" property="og:title">
 <meta content="The main entry point for planning, choosing and plunging directly into the world of travel."
       property="og:description">
-<!-- styles -->
 <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
-<link rel="stylesheet" href="lib/glider/glider.min.css">
-<link rel="stylesheet" href="lib/photoswipe/photoswipe.css">
-<link rel="stylesheet" href="lib/photoswipe/default-skin/default-skin.css">
-</head>
+<link href="style.css?ec4e901087387277eaf1" rel="stylesheet"></head>
 <body>
 <header class="header">
     <img class="logo" src="assets/logo.jpg" alt="">
@@ -48,9 +43,9 @@
             <p>This is the new accessible medium for the best travel experience around the planet. Now you will see everything with your own eyes. Inspire, plan, share and choose the best ways to travel and enjoy the beauty of the world. This is the new way! Join now!</p>
         </div>
     </div>
-    <video class="bg" autoplay muted loop playsinline poster="assets/backgrounds/main-bg.jpg">        
+    <video class="bg" autoplay muted loop playsinline poster="assets/backgrounds/main-bg.jpg">
         <source src="https://s3.eu-central-1.amazonaws.com/bemyways-video/BG.mp4" type="video/mp4">
-        <img alt="" src="assets/backgrounds/main-bg.jpg"/>
+        <img class="lazy" alt="" src="assets/backgrounds/main-bg.svg" data-src="assets/backgrounds/main-bg.jpg"/>
     </video>
     <button class="sound-button sound-off"></button>
 </section>
@@ -98,14 +93,13 @@
 <section class="slide slide-blockchain-video with-overlay">
     <video data-scroll autoplay muted loop playsinline poster="assets/backgrounds/blockchain-bg.jpg">
         <source src="https://s3.eu-central-1.amazonaws.com/bemyways-video/blockchain-bg.mp4" type="video/mp4">
-        <img class="lazy" data-src="assets/backgrounds/blockchain-bg.jpg" src="" alt="">
+        <img class="lazy" data-src="assets/backgrounds/blockchain-bg.jpg" src="assets/backgrounds/blockchain-bg.svg" alt="">
     </video>
 </section>
 <section class="slide with-overlay" id="slide-tabs">
-    <img class="slide-img-bg lazy" src="" alt=""
-         data-src="assets/backgrounds/tabs-bg.jpg">
+    <img class="slide-img-bg lazy" src="assets/backgrounds/tabs-bg.svg" data-src="assets/backgrounds/tabs-bg.jpg" alt="">
     <div class="container">
-        <div class="content">            
+        <div class="content">
             <p>BeMyWays believes in video as the best way to get complete and reliable information. You no longer need to read a bunch of text reviews wondering if you could rely on them. BeMyWays focuses on video content and sets a standard for its quality.</p>
 			<br/>
 			<p>BeMyWays is an approachable platform: You can shoot a video with a smartphone or a camera, set it up to music or just talk. It doesn’t matter if you’re a professional blogger with lots of equipment and experience or a person with a dream and a concept.</p>
@@ -332,14 +326,12 @@
          data-action="rotate">
 </section>
 <section class="slide with-overlay" id="slide-goal">
-    <img class="slide-img-bg lazy" src="assets/backgrounds/goal-bg.svg" alt=""
-         data-src="assets/backgrounds/goal-bg.jpg">
     <div class="container">
         <div class="content">
             <h2>Our Goal</h2>
 			<div class="half-left">
-				<p>We are creating a global innovative product, the largest themed media and social network. This is an ambitious goal, but imagine the result - in several years it may just become the most visited platform in the world with over 1 billion users.</p> 
-				
+				<p>We are creating a global innovative product, the largest themed media and social network. This is an ambitious goal, but imagine the result - in several years it may just become the most visited platform in the world with over 1 billion users.</p>
+
 			</div>
 			<h2 class="top-5">Platforms</h2>
             <div class="tabs-slider">
@@ -462,10 +454,10 @@
 </section>
 
 <section class="slide with-overlay" id="slide-mission">
-	<img class="slide-img-bg lazy" src="" alt="" data-src="assets/backgrounds/mission-bg.jpg">
+	<img class="slide-img-bg lazy" src="assets/backgrounds/mission-bg.svg" alt="" data-src="assets/backgrounds/mission-bg.jpg">
     <div class="container">
         <div class="content">
-            <h2>Mission \ Social Responsibility</h2>
+            <h2>MISSION \ SOCIAL RESPONSIBILITY</h2>
 
             <figure class="mission-row">
                 <figcaption class="mission-row_caption">Light up millions of people with the idea of regular travel and exploration of the world. Raise a global self-developing creatively involved community.</figcaption>
@@ -903,15 +895,5 @@
         </div>
     </div>
 </div>
-
-<!-- scripts -->
-<script src="lib/scroll-out.min.js"></script>
-<script src="lib/smoothscroll.js"></script>
-<script src="lib/anime.min.js"></script>
-<script src="lib/intersection-observer-polyfill.js"></script>
-<script src="lib/photoswipe/photoswipe.min.js"></script>
-<script src="lib/photoswipe/photoswipe-ui-default.min.js"></script>
-<script src="lib/glider/glider.min.js"></script>
-<script src="script.js"></script>
-</body>
+<script type="text/javascript" src="main.js?ec4e901087387277eaf1"></script></body>
 </html>

@@ -1,0 +1,106 @@
+.stars {
+  $duration: .2s;
+
+  display: flex;
+  position: relative;
+  flex-direction: row-reverse;
+  justify-content: center;
+  border-bottom: 1px solid currentColor;
+  padding-bottom: .5em;
+  font-size: 7rem;
+
+  [type="radio"] {
+    display: none;
+  }
+
+  .stars_star {
+    position: relative;
+    cursor: pointer;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  // check
+  .stars_star::before {
+    //content: "☆";
+    display: block;
+    margin: 0 .3em;
+    background-image: url(assets/star.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 1em;
+    height: 1em;
+    content: " ";
+  }
+
+  .stars_star:hover::before,
+  .stars_star:hover ~ .stars_star::before,
+  [type="radio"]:checked ~ .stars_star::before {
+    // content: "★";
+    background-image: url(assets/star-filled.svg);
+  }
+
+  // полосочка
+  [type="radio"]:checked + .stars_star::after {
+    position: absolute;
+    top: .8em;
+    left: 50%;
+    border-left: 1px solid currentColor;
+    width: 1px;
+    height: 0.7em;
+    content: '';
+    pointer-events: none;
+  }
+
+  // title switch
+  [type="radio"]:checked + .stars_star + .stars_title {
+    opacity: 1;
+  }
+
+  // description switch
+  [type="radio"]:checked + .stars_star + .stars_title + .stars_description {
+    opacity: 1;
+  }
+
+  .stars_title {
+    $starOffset: 3em;
+    $offset: 8em;
+
+    position: absolute;
+    top: 6em;
+    transition: opacity $duration;
+    opacity: 0;
+    text-transform: uppercase ;
+    font-size: 0.2em;
+    font-weight: bold;
+
+    &:nth-of-type(5) {
+      left: $starOffset;
+    }
+
+    &:nth-of-type(4) {
+      left: $offset + $starOffset;
+    }
+
+    &:nth-of-type(3) {
+      left: 2 * $offset + $starOffset;
+    }
+
+    &:nth-of-type(2) {
+      right: $offset + $starOffset;
+    }
+
+    &:nth-of-type(1) {
+      right: $starOffset;
+    }
+  }
+
+  .stars_description {
+    position: absolute;
+    top: 11.5em;
+    left: 0;
+    transition: opacity $duration;
+    opacity: 0;
+    font-size: 1rem;
+  }
+}
