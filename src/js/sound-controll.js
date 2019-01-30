@@ -1,5 +1,4 @@
-(() => {
-  // Sound control
+export const initSoundControl = () => {
   const mainSlide = document.getElementById('slide-main');
 
   if (mainSlide) {
@@ -19,4 +18,4 @@
       }
     });
   }
-})();
+};

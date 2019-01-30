@@ -1,4 +1,4 @@
-(() => {
+export const initStars = () => {
   const container = document.getElementById('main-stars');
 
   if (container) {
@@ -7,7 +7,7 @@
     stars.forEach((star) => {
       star.addEventListener('mouseenter', ({target}) => {
         target.click();
-      })
+      }, {passive: true})
     });
   }
-})();
+};

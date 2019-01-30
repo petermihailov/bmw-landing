@@ -12,7 +12,7 @@ module.exports = {
     './node_modules/glider-js/glider.min.css',
     './node_modules/photoswipe/dist/photoswipe.css',
     './node_modules/photoswipe/dist/default-skin/default-skin.css',
-    './src/scss/_app.scss',
+    './src/scss/index.scss',
   ],
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -67,7 +67,11 @@ module.exports = {
 
   optimization: {
     minimizer: [
-      new OptimizeCSSAssetsPlugin({}),
+      new OptimizeCSSAssetsPlugin({
+        cssProcessorPluginOptions: {
+          preset: ['default', {discardComments: {removeAll: true}}],
+        },
+      }),
     ],
   },
 
@@ -77,7 +81,7 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       filename: 'index.html',
-      template: './src/templates/index.twig',
+      template: './src/twig/index.twig',
       inject: true,
       hash: true,
     }),

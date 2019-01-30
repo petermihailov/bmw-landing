@@ -1,4 +1,2 @@
-(() => {
-  // smooth scroll
-  const scroll = new SmoothScroll('a[href*="#"]');
-})();
+import SmoothScroll from 'smooth-scroll';
+export const initSmoothScroll = () => new SmoothScroll('a[href*="#"]');
