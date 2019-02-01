@@ -1,6 +1,10 @@
 @import "variables";
 @import "minireset";
 @import "global";
+@import "helpers";
+@import "slide";
+@import "card";
+@import "soc-icon";
 @import "effects";
 @import "overlay-bg";
 @import "gallery";
@@ -12,7 +16,6 @@
 @import "slides/main";
 @import "slides/start";
 @import "slides/goal";
-//@import "scss/slides/values";
 @import "slides/tube";
 @import "slides/store";
 @import "slides/apps";

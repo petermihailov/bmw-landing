@@ -1,0 +1,18 @@
+.slide {
+  position: relative;
+  padding: 6rem 4rem;
+  overflow: hidden;
+  background-color: $main-color;
+
+  .slide-img-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: filter .3s;
+    width: 100%;
+    height: 100%;
+    user-select: none;
+    object-fit: cover;
+    pointer-events: none;
+  }
+}
