@@ -12,6 +12,9 @@ export const initLazyLoading = () => document.addEventListener('DOMContentLoaded
           imageObserver.unobserve(img);
         }
       });
+    }, {
+      rootMargin: '0px',
+      threshold: 0.1,
     });
 
     lazyloadImages.forEach((image) => imageObserver.observe(image));
