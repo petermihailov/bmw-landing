@@ -7808,6 +7808,9 @@ var initLazyLoading = function initLazyLoading() {
             imageObserver.unobserve(img);
           }
         });
+      }, {
+        rootMargin: '0px',
+        threshold: 0.1
       });
       lazyloadImages.forEach(function (image) {
         return imageObserver.observe(image);
