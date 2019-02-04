@@ -12,13 +12,13 @@
   }
 
   &::before {
-    top: 0;
+    top: -2px;
     background: linear-gradient($main-color, rgba($main-color, 0) 50%);
     z-index: 1;
   }
 
   &::after {
-    bottom: 0;
+    bottom: -2px;
     background: linear-gradient(rgba($main-color, 0) 50%, $main-color);
   }
 }
