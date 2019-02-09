@@ -11,6 +11,7 @@
   }
 
   .wheel {
+    will-change: transform;
     display: none;
     position: absolute;
     top: 10em;
